@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-back: #152427;
+    --primary-color-green: #143c3c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn {
+    min-width: 173px;
+    height: 57px;
+    color: #fff;
+    padding: 14px 14px;
+    border-radius: 999px;
+    outline: none;
+    background: var(--primary-color-green);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    padding: 28px 0 14px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(30px);
+    font-family: "Public Sans";
+}
+
+.header--fixed {
+    position: sticky;
+    top: -14px;
+    left: 0;
+    z-index: 999;
+}
+
+.header-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top::after {
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    gap: 88px;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 10px 15px;
+    color: #575d5e;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.56;
+    transition: 0.25s;
+}
+
+.navbar__link:hover {
+    color: var(--primary-color-green);
+}
+
+.navbar__link--active {
+    position: relative;
+    color: var(--primary-color-back);
+}
+
+.navbar__link--active::after {
+    position: absolute;
+    left: 15px;
+    bottom: -22px;
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: var(--primary-color-green);
+    z-index: 1000;
+}
