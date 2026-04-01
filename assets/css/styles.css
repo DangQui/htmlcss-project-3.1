@@ -64,13 +64,53 @@ button {
     overflow: hidden;
 }
 
-.section-sub-title {
+.line-2 {
+    --line-clamp: 2;
+}
+
+.line-3 {
+    --line-clamp: 3;
+}
+
+.line-4 {
+    --line-clamp: 4;
+}
+
+.section-sub-heading {
     color: #152427;
     font-family: Poppins;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.13;
+}
+
+.section-sub-heading::before {
+    display: inline-block;
+    content: "";
+    background: #152427;
+    width: 25px;
+    height: 1px;
+    margin-right: 21px;
+    margin-bottom: 8px;
+}
+
+.section-heading {
+    color: #152427;
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24; /* 123.81% */
+}
+
+.section-heading::after {
+    display: inline-block;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background: #152427;
+    margin-left: 21px;
+    margin-bottom: 6px;
 }
 
 /* Header */
@@ -316,4 +356,40 @@ button {
 
 .partner__arworld .partner__img:last-child {
     margin-left: 11px;
+}
+
+/* Service */
+.service {
+    padding: 75px 0;
+    margin-top: 31px;
+}
+
+.service__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__heading {
+    width: 520px;
+}
+
+.service__controls {
+    display: flex;
+    gap: 17px;
+    padding: 41px 73px 9px 0;
+}
+
+.service__control-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: #e2eddf;
+    outline: none;
+    border: 1px solid #e2eddf;
+    transition: 0.25s;
+}
+
+.service__control-btn:hover {
+    color: #fff;
+    background: #143c3c;
 }
