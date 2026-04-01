@@ -64,6 +64,15 @@ button {
     overflow: hidden;
 }
 
+.section-sub-title {
+    color: #152427;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.13;
+}
+
 /* Header */
 .header {
     padding: 28px 0 14px;
@@ -289,4 +298,22 @@ button {
 .hero__deco:last-of-type {
     right: 2%;
     bottom: -28%;
+}
+
+/* Partner */
+.partner {
+    margin-top: 207px;
+}
+
+.partner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 76px 122px;
+    background: #e2eddf;
+    border-radius: 100px;
+}
+
+.partner__arworld .partner__img:last-child {
+    margin-left: 11px;
 }
