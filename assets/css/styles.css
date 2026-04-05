@@ -472,3 +472,218 @@ button {
     color: #7d8188;
     max-width: 268px;
 }
+
+/* About */
+.about {
+    padding: 75px 0;
+    margin-top: 7px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__media {
+    position: relative;
+    width: 52%;
+}
+
+.about__images {
+    display: flex;
+    gap: 21px;
+}
+
+.about__img {
+    width: 285px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 210px;
+    background: lightgray;
+    object-position: center;
+    box-shadow: 0 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__img:first-of-type {
+    margin-top: 90px;
+}
+
+.about__deco:last-of-type {
+    position: absolute;
+    transform: rotate(16deg);
+    top: 19px;
+    left: -2px;
+}
+
+.section-heading.about__heading::after {
+    content: none;
+}
+
+.about__content {
+    width: 43%;
+}
+
+.about__heading {
+    width: 483px;
+}
+
+.about__desc {
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63;
+    margin-top: 11px;
+}
+
+.about-stats__bot,
+.about-stats__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-stats__top {
+    column-gap: 24px;
+    padding: 36px 7px 20px 0;
+    border-bottom: 1px solid #83a17d;
+}
+
+.about-stats__bot {
+    column-gap: 20px;
+    padding: 38px 16px 20px 0;
+    border-bottom: 1px solid #83a17d;
+}
+
+.about-stats__num {
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
+.about-stats__desc {
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71;
+}
+
+.about-teams {
+    position: absolute;
+    right: -8px;
+    bottom: 8px;
+    padding: 19px 17px 11px;
+    width: 143px;
+    height: 144px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 7px 54px 0 rgba(154, 154, 154, 0.25);
+}
+
+.about-teams__heading {
+    color: var(--primary-color-back);
+    font-family: "Public Sans";
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.about-teams__subheading {
+    display: block;
+    color: #575d5e;
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 6px;
+}
+
+.about-teams__percent {
+    color: var(--Primary-color-black);
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+    margin-top: 10px;
+}
+
+.about-teams__progress {
+    position: relative;
+    width: 96px;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+    margin-top: 3px;
+}
+
+.about-teams__progress::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+}
+
+.about-teams__loading {
+    display: block;
+    color: var(--Primary-color-black);
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+    text-align: right;
+    width: 98px;
+}
+
+.about-teams__dot {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #eaeaea;
+    margin-top: 3px;
+}
+
+.about-teams__dot::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #143c3c;
+    border-radius: 50%;
+}
+
+.about-teams__members {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.about-teams__members-title {
+    color: var(--Primary-color-black);
+    font-family: "Public Sans";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4; /* 140% */
+}
+
+.about-teams__members-img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #fff;
+}
+
+.about-teams__members-img + .about-teams__members-img {
+    margin-left: -10px;
+}
