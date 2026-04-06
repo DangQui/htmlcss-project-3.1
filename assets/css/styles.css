@@ -420,7 +420,6 @@ button {
     grid-auto-rows: 0;
     column-gap: 16px;
     margin-top: 76px;
-    overflow: hidden;
 }
 
 .service-item {
@@ -686,4 +685,141 @@ button {
 
 .about-teams__members-img + .about-teams__members-img {
     margin-left: -10px;
+}
+
+/* Process */
+.process {
+    padding-top: 36px;
+    margin-top: 4px;
+}
+
+.process__heading {
+    width: 493px;
+    margin-top: 20px;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process-item {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 54px 41px 25px 20px;
+    transition: 0.6s;
+}
+
+.process-item::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    content: "";
+    width: 1131px;
+    height: 3px;
+    background: linear-gradient(
+        180deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
+}
+
+.process-item::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 185px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 33px;
+    background: rgb(226, 237, 223);
+    transition: 0.6;
+}
+
+.process-item:hover::after {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.process-item:hover {
+    padding: 54px 41px 25px 30px;
+    cursor: pointer;
+}
+
+.process-item:hover .process-item__link {
+    display: inline-block;
+}
+
+.process-item:hover .process-item__link,
+.process-item:hover::before,
+.process-item:hover .process-item__img {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.process-item:hover .process-item__desc {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(10px);
+}
+
+.process-item__content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    flex-grow: 1;
+}
+
+.process-item__order {
+    min-width: 107px;
+    color: #143c3c;
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 52px;
+}
+
+.process-item__heading {
+    padding: 22px 0;
+}
+
+.process-item__desc {
+    width: 572px;
+    color: #7d8188;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    transition: 0.25s;
+}
+
+.process-item__link {
+    visibility: hidden;
+    opacity: 0;
+    color: #575d5e;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+    text-decoration: underline;
+    transition: 0.25s;
+}
+
+.process-item__img {
+    position: absolute;
+    bottom: -16px;
+    right: 92px;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: 0.4s;
 }
