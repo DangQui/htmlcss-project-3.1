@@ -1000,3 +1000,119 @@ button {
 .features-item:last-of-type .features-item__desc {
     max-width: 264px;
 }
+
+/* Articles */
+.articles {
+    margin-top: 184px;
+}
+
+.articles__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articles__heading {
+    width: 574px;
+}
+
+.articles__desc {
+    width: 409px;
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+}
+
+.articles__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 90px;
+}
+
+.articles-item {
+    width: 360px;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
+}
+
+.articles-item:hover {
+    border-radius: 40px 40px 20px 20px;
+    background: var(--text-color-white, #fff);
+    box-shadow: 0 12px 74px 0 rgba(91, 91, 91, 0.25);
+}
+
+.articles-item:hover .articles-item__content {
+    padding: 26px 49px 12px 30px;
+}
+
+.articles-item:hover .articles-item__img {
+    transform: scale(1.1);
+}
+
+.articles-item__content {
+    padding: 26px 14px 12px 0;
+    transition: 0.25s;
+}
+
+.articles-item__thumb {
+    overflow: hidden;
+    border-radius: 40px 40px 0 0;
+}
+
+.articles-item__img {
+    width: 100%;
+    height: 317px;
+    object-fit: cover;
+    transition: 0.25s;
+}
+
+.articles-item__btn {
+    min-width: 107px;
+    height: 26px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 7px 35px;
+    background: #e2eddf;
+}
+
+.articles-item__btn:hover {
+    color: #e2eddf;
+    background: #143c3c;
+}
+
+.articles-item__heading.heading.lv3 {
+    position: relative;
+    color: #143c3c;
+    height: 100px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    margin-top: 13px;
+}
+
+.articles-item__heading.heading.lv3::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+    transition: 0.25s;
+}
+
+.articles-item__date {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 16px;
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+}
